@@ -1,0 +1,13 @@
+D:\UnityProject\LOLProject\LOLclient\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+D:\UnityProject\LOLProject\LOLclient\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+D:\UnityProject\LOLProject\LOLclient\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\UnityProject\LOLProject\LOLclient\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\UnityProject\LOLProject\LOLclient\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+D:\UnityProject\LOLProject\LOLclient\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\UnityProject\LOLProject\LOLclient\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\UnityProject\LOLProject\LOLclient\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+D:\UnityProject\LOLProject\LOLclient\obj\Debug\UnityVS.LOLclient.CSharp.csprojResolveAssemblyReference.cache
+D:\UnityProject\LOLProject\LOLclient\obj\Debug\Assembly-CSharp.dll
+D:\UnityProject\LOLProject\LOLclient\obj\Debug\Assembly-CSharp.pdb
+D:\UnityProject\LOLProject\LOLclient\Temp\UnityVS_bin\Debug\GameProtocol.dll
+D:\UnityProject\LOLProject\LOLclient\Temp\UnityVS_bin\Debug\GameProtocol.pdb

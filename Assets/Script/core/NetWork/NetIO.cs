@@ -15,8 +15,9 @@ public class NetIO {
         }
     }
     private Socket socket;
-    private string ip = "127.0.0.1";
-    private int port = 4005;
+    private string ip = "113.57.178.60";
+
+    private int port = 6500;
     private byte[] readBuffer = new byte[1024];
     List<byte> cache = new List<byte>();//消息缓冲区
     private bool isReading = false;
@@ -28,8 +29,10 @@ public class NetIO {
     private NetIO() {
         try
         {
+            IPAddress ipAddr = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0];
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            socket.Connect(IPAddress.Parse(ip), port);
+            //socket.Connect(ipAddr, port);//113.57.178.60/27.17.53.60
+            socket.Connect("1462z254b3.iok.la", 15321);
             socket.BeginReceive(readBuffer, 0, 1024, SocketFlags.None, ReceiveCallBack, readBuffer);
         }
         catch (System.Exception ex)
@@ -60,7 +63,9 @@ public class NetIO {
         }
         catch (System.Exception ex)
         {
+
             Debug.Log("远程服务器断开连接.");
+            PopWindowManager.AddMsg("远程服务器断开连接..");
             socket.Close();
         }
         socket.BeginReceive(readBuffer, 0, 1024, SocketFlags.None, ReceiveCallBack, readBuffer);
@@ -85,6 +90,7 @@ public class NetIO {
         }catch(Exception e)
         {
             Debug.Log("网络错误，请从新连接" + e.Message);
+            PopWindowManager.AddMsg("网络连接失败");
         }
         sendArr.Close();
         arr.Close();

@@ -4,10 +4,12 @@ using UnityEngine.UI;
 public class Login : BaseUI {
     private InputField accInput;
     private InputField passInput;
-    public LoginHandler loginhandler;
+    private LoginHandler loginhandler;
+    private Toggle toggle;
     protected override void OnAwake() {
         accInput = transform.Find("account/InputField").GetComponent<InputField>();
         passInput = transform.Find("password/InputField").GetComponent<InputField>();
+        toggle = transform.Find("Toggle").GetComponent<Toggle>();
         loginhandler = GameObject.Find("NetWork").GetComponent<LoginHandler>();
         loginhandler.OnLogin += this.onLogin;
     }
@@ -38,6 +40,10 @@ public class Login : BaseUI {
             model.password = passInput.text;
             //登陆的时候像服务器发送消息
             loginhandler.login(model);
+            if (toggle.isOn)
+            {
+                //保存账号密码
+            }
             PopWindowManager.AddMsg("正在向服务器请求登陆...");       
         }
     }

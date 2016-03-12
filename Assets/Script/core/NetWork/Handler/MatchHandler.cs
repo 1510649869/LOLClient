@@ -16,12 +16,18 @@ public class MatchHandler:IHandler {
     public override void MessageReceive(SocketModel model) {
        switch(model.Command)
        {
-           case MatchProtocol.ENTER_SRES:
+           case MatchProtocol.ENTER_SRES://返回匹配结果
                break;
-           case MatchProtocol.LEAVE_SRES:
+           case MatchProtocol.LEAVE_SRES://返回取消匹配结果
+               OnLeaveMatch();
+               break;
+           case MatchProtocol.ENTER_SELECT_BRO:
+               //PopWindowManager.AddMsg("进入选人界面");
+               OnLoadSelectSscene();
                break;
        }
     }
-    public event OnGetMatchEvent OnGetMatch;
-    public event OnLeaveMatchEvent OnLeaveMatch;
+    //public event OnGetMatchEvent OnGetMatch;
+    public OnLeaveMatchEvent OnLeaveMatch;
+    public OnLoadSelectSceneEvent OnLoadSelectSscene;
 }

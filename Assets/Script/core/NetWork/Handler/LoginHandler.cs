@@ -14,6 +14,7 @@ public class LoginHandler :IHandler{
     public void register(GameProtocol.dto.AccountModel dto) {
        // NetIO.Instance.write((byte)type, 0, GameProtocol.LoginProtocol.REG_CREQ, dto);
         this.Write((byte)type, 0, GameProtocol.LoginProtocol.REG_CREQ, dto);
+        
     }
     public override void MessageReceive(SocketModel model) {
         switch(model.Command)

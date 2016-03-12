@@ -5,8 +5,11 @@ using System.Collections.Generic;
 public class PopWindowManager : MonoBehaviour {
     private static List<string> MsgList = new List<string>();
     public PopWindowUI windowUI;
+    void Start() {
+        //InvokeRepeating("Check", 0, 0.01f);
+    }
     void Update() {
-        if(MsgList.Count>0)
+        if (MsgList.Count > 0)
         {
             string msg = MsgList[0];
             MsgList.RemoveAt(0);

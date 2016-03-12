@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
 public class PopWindowUI : BaseUI {
-    private Text msgText;
+    public Text msgText;
     public void Show(string msg) {
         base.Show(msg);
     }
@@ -29,7 +28,6 @@ public class PopWindowUI : BaseUI {
     protected override void OnHideFront() {
         msgText.text = "";
     }
-
     public override State mState {
         get { return State.none; }
     }

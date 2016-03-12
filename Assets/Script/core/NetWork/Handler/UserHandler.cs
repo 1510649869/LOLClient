@@ -16,15 +16,22 @@ public class UserHandler : IHandler {
         this.Write((byte)type, 0, UserProtocol.INFO_CREQ, null);
     }
     /// <summary>
-    /// 像服务器申请创建用户
+    /// 向服务器申请创建用户
     /// </summary>
     /// <param name="name"></param>
     public void applyCreate(string name) {
         this.Write((byte)type, 0, UserProtocol.CREAT_CREQ, name);
     }
+    /// <summary>
+    /// 向服务器申请用户上线
+    /// </summary>
     public void applyonline() {
         this.Write((byte)type, 0, UserProtocol.ONLINE_CREQ, null);
     }
+    /// <summary>
+    /// 服务器返回后的处理
+    /// </summary>
+    /// <param name="model"></param>
     public override void MessageReceive(SocketModel model) {
        switch(model.Command)
        {
@@ -49,7 +56,7 @@ public class UserHandler : IHandler {
         }
     }
     void get(UserModel user) {
-        Debug.Log(user);
+        //Debug.Log(user);
         if (user == null)
         {
             GameData.user = null;//创建角
@@ -65,12 +72,12 @@ public class UserHandler : IHandler {
         }
         else
         {
-            PopWindowManager.AddMsg("用户上线成功");
-            Online(user);
+            //PopWindowManager.AddMsg("用户上线成功");
+            Online(user);//用户上线成功后
         }
     }
-    public event OnGetEvent OnGet;
-    public event OnCreateEvent OnCreate;
-    public event OnLineEvent Online;
+    public OnGetEvent OnGet;
+    public OnCreateEvent OnCreate;
+    public OnLineEvent Online;
   
 }

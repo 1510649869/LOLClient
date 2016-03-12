@@ -15,4 +15,7 @@ public class SocketModel{
         this.Command = command;
         this.Message = message;
     }
+    public T GetMessage<T>() {
+        return (T)Message;
+    }
 }

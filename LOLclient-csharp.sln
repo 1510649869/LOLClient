@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{7B65F16F-CFF9-3AE4-FC5D-494A42E11938}") = "LOLclient", "Assembly-CSharp-vs.csproj", "{8C1AF4CC-3B4E-7C96-EDB2-5A5EC3DFC8BF}"
 EndProject
+Project("{7B65F16F-CFF9-3AE4-FC5D-494A42E11938}") = "LOLclient", "Assembly-CSharp-Editor-vs.csproj", "{CFAC67D0-F7BF-3E5E-ECD4-0671E4582B1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{8C1AF4CC-3B4E-7C96-EDB2-5A5EC3DFC8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C1AF4CC-3B4E-7C96-EDB2-5A5EC3DFC8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C1AF4CC-3B4E-7C96-EDB2-5A5EC3DFC8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFAC67D0-F7BF-3E5E-ECD4-0671E4582B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFAC67D0-F7BF-3E5E-ECD4-0671E4582B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFAC67D0-F7BF-3E5E-ECD4-0671E4582B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFAC67D0-F7BF-3E5E-ECD4-0671E4582B1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																							GlobalSection(MonoDevelopProperties) = preSolution
+																														GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

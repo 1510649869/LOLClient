@@ -2,7 +2,8 @@
 using UnityEngine.EventSystems;
 using System.Collections;
 
-public class EventTriggerListener : EventTrigger {
+//模拟NGUI对控件添加响应事件
+public class EventTriggerListener :  EventTrigger {
     public delegate void VoidDelegate(GameObject go);
     public VoidDelegate onClick;
     public VoidDelegate onDown;

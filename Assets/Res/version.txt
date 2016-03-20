@@ -1,0 +1,2 @@
+image.assetbundle,1.0.6
+cube.assetbundle,1.0.7

@@ -1,4 +1,7 @@
 4.6.9f1:2.1.0.0
-Android
-D:\Program Files (x86)\Unity\Editor\Data\PlaybackEngines\androidplayer/Managed/UnityEngine.dll
+StandaloneWindows
+D:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Managed/UnityEngine.dll
 D:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.9/Standalone/UnityEngine.UI.dll
+D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll
+D:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.9/Editor/UnityEditor.UI.dll
+D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll

@@ -21,6 +21,7 @@ public class FightUI : MonoBehaviour {
 
     public PlayerCon myHero;
     void Awake() {
+        //Debug.Log(transform.localToWorldMatrix);
         if (_instance == null)
             _instance = this;
         GameObject net = GameObject.Find("NetWork");

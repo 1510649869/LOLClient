@@ -32,7 +32,7 @@ public class NetIO {
             IPAddress ipAddr = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0];
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             //socket.Connect(ipAddr, port);//113.57.178.60/27.17.53.60
-            socket.Connect("1462z254b3.iok.la", 15321);
+            socket.Connect("1462z254b3.iok.la", 16367);
             socket.BeginReceive(readBuffer, 0, 1024, SocketFlags.None, ReceiveCallBack, readBuffer);
         }
         catch (System.Exception ex)
